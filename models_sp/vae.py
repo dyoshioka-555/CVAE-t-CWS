@@ -32,7 +32,6 @@ class DecomposedVAE(nn.Module):
         vocab,
         label_num,
         device,
-        bow_size,
     ):
         super(DecomposedVAE, self).__init__()
         model_init = uniform_initializer(0.01)

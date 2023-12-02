@@ -6,14 +6,94 @@
 #
 
 from itertools import cycle
-import torch
-import numpy as np
-import scipy
 from multiprocessing import Pool
-
+from sklearn.feature_extraction.text import CountVectorizer as CV
 from collections import defaultdict, OrderedDict
 
-from sklearn.feature_extraction.text import CountVectorizer as CV
+import torch
+from torch.utils.data import Dataset
+from torch.nn.utils.rnn import pad_sequence
+import numpy as np
+import scipy
+import pandas as pd
+
+import sentencepiece as spm
+
+def collate_fn(batch):
+    # バッチ内の各要素を分離
+    bos = torch.LongTensor([1])
+    eos = torch.LongTensor([2])
+    labels = [[1, 0] if item['label'] else [0, 1] for item in batch ]
+    texts = [torch.cat([bos, torch.LongTensor(item['text']), eos]) for item in batch]
+    content_words = [item['cw'] for item in batch]
+
+    #print(texts)
+
+    # テンソルに変換
+    labels = torch.tensor(labels, dtype=torch.float, requires_grad=False)
+
+    # パディング
+    padded_texts = pad_sequence(texts, batch_first=False, padding_value=3)
+
+    #print(texts)
+    #print(labels)
+    #print(content_words)
+
+    return padded_texts, labels, content_words
+
+def create_batch_sampler(data, batch_size):
+    indices = torch.arange(len(data)).tolist()
+    sorted_indices = sorted(indices, key=lambda idx: len(data[idx]["text"]))
+
+    batch_indices = []
+    start = 0
+    end = min(start + batch_size, len(data))
+    while True:
+        batch_indices.append(sorted_indices[start: end])
+
+        if end >= len(data):
+            break
+
+        start = end
+        end = min(start + batch_size, len(data))
+
+    return batch_indices
+
+class CustomDataset(Dataset):
+    def __init__(self, data, data_name):
+        self.data_df = data.dropna()
+        data = self.data_df.to_dict(orient='records')
+        self.data = sorted(data, key=lambda x: len(x['text']))
+        
+        # SentencePiece トークナイザーの初期化
+        self.tokenizer = spm.SentencePieceProcessor()
+        self.tokenizer.Load(f"{data_name}.model")
+
+    def __len__(self):
+        return len(self.data)
+    
+    def text_len(self):
+        f_len = lambda x: len(x.split(" "))
+        text_len = self.data_df["text"].apply(f_len)
+        return text_len.max(), text_len.min(), text_len.mean()
+
+    def __getitem__(self, idx):
+        item = self.data[idx]
+        label = item['label']
+        text = item['text']
+        content_words = item['cw']
+
+        # テキストのトークナイズ
+        encoded_text_ids = self.tokenizer.EncodeAsIds(text)
+        encoded_cw_ids = self.tokenizer.EncodeAsIds(content_words)
+
+
+        return {
+            'label': label,
+            'text': encoded_text_ids,
+            'cw': encoded_cw_ids
+        }
+
 
 
 def bow_to_array(bow_raw, count):

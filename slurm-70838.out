@@ -1,0 +1,795 @@
+Vocabulary size: 43405
+Experiment dir: checkpoint/ours-jsw-attn+pe/20231109-175356
+Vocabulary size: 43405
+Maximum length: 15
+Maximum length: 15
+Maximum length: 15
+| epoch  1 |  5000/35093 batches | 22.65 ms/batch | loss 40.04 | recon 40.00 | kl 0.04 |
+| epoch  1 | 10000/35093 batches | 22.27 ms/batch | loss 16.11 | recon 16.08 | kl 0.03 |
+| epoch  1 | 15000/35093 batches | 22.32 ms/batch | loss 12.26 | recon 12.23 | kl 0.03 |
+| epoch  1 | 20000/35093 batches | 22.47 ms/batch | loss 10.96 | recon 10.93 | kl 0.03 |
+| epoch  1 | 25000/35093 batches | 22.79 ms/batch | loss 10.36 | recon 10.34 | kl 0.02 |
+| epoch  1 | 30000/35093 batches | 22.34 ms/batch | loss 10.03 | recon 10.00 | kl 0.03 |
+| epoch  1 | 35000/35093 batches | 22.28 ms/batch | loss 9.81 | recon 9.79 | kl 0.03 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch  1 | time 803.13s | kl_weight 0.19 | vae_lr 1.00 | loss 8.45
+| recon 8.43 | kl 0.03 | mi 0.02
+---------------------------------------------------------------------------
+| epoch  2 |  5000/35093 batches | 22.86 ms/batch | loss 9.58 | recon 9.55 | kl 0.03 |
+| epoch  2 | 10000/35093 batches | 22.42 ms/batch | loss 9.51 | recon 9.48 | kl 0.03 |
+| epoch  2 | 15000/35093 batches | 22.76 ms/batch | loss 9.47 | recon 9.44 | kl 0.03 |
+| epoch  2 | 20000/35093 batches | 22.76 ms/batch | loss 9.40 | recon 9.37 | kl 0.03 |
+| epoch  2 | 25000/35093 batches | 22.47 ms/batch | loss 9.42 | recon 9.39 | kl 0.03 |
+| epoch  2 | 30000/35093 batches | 22.31 ms/batch | loss 9.34 | recon 9.31 | kl 0.03 |
+| epoch  2 | 35000/35093 batches | 22.49 ms/batch | loss 9.33 | recon 9.30 | kl 0.03 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch  2 | time 807.68s | kl_weight 0.28 | vae_lr 1.00 | loss 8.25
+| recon 8.24 | kl 0.02 | mi -0.04
+---------------------------------------------------------------------------
+| epoch  3 |  5000/35093 batches | 22.63 ms/batch | loss 9.19 | recon 9.16 | kl 0.03 |
+| epoch  3 | 10000/35093 batches | 22.52 ms/batch | loss 9.18 | recon 9.15 | kl 0.03 |
+| epoch  3 | 15000/35093 batches | 22.88 ms/batch | loss 9.21 | recon 9.17 | kl 0.04 |
+| epoch  3 | 20000/35093 batches | 22.86 ms/batch | loss 9.23 | recon 9.19 | kl 0.04 |
+| epoch  3 | 25000/35093 batches | 22.60 ms/batch | loss 9.20 | recon 9.16 | kl 0.04 |
+| epoch  3 | 30000/35093 batches | 22.69 ms/batch | loss 9.23 | recon 9.19 | kl 0.04 |
+| epoch  3 | 35000/35093 batches | 23.18 ms/batch | loss 9.17 | recon 9.14 | kl 0.04 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch  3 | time 814.75s | kl_weight 0.37 | vae_lr 1.00 | loss 8.02
+| recon 7.98 | kl 0.04 | mi -0.03
+---------------------------------------------------------------------------
+| epoch  4 |  5000/35093 batches | 22.42 ms/batch | loss 9.11 | recon 9.08 | kl 0.04 |
+| epoch  4 | 10000/35093 batches | 22.75 ms/batch | loss 9.09 | recon 9.05 | kl 0.04 |
+| epoch  4 | 15000/35093 batches | 22.89 ms/batch | loss 9.11 | recon 9.07 | kl 0.04 |
+| epoch  4 | 20000/35093 batches | 22.35 ms/batch | loss 9.09 | recon 9.06 | kl 0.04 |
+| epoch  4 | 25000/35093 batches | 22.52 ms/batch | loss 9.20 | recon 9.15 | kl 0.04 |
+| epoch  4 | 30000/35093 batches | 22.45 ms/batch | loss 9.19 | recon 9.15 | kl 0.04 |
+| epoch  4 | 35000/35093 batches | 22.15 ms/batch | loss 9.17 | recon 9.13 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch  4 | time 804.01s | kl_weight 0.46 | vae_lr 1.00 | loss 8.28
+| recon 8.24 | kl 0.04 | mi 0.00
+---------------------------------------------------------------------------
+| epoch  5 |  5000/35093 batches | 23.05 ms/batch | loss 9.09 | recon 9.05 | kl 0.04 |
+| epoch  5 | 10000/35093 batches | 22.95 ms/batch | loss 9.16 | recon 9.11 | kl 0.04 |
+| epoch  5 | 15000/35093 batches | 22.62 ms/batch | loss 9.15 | recon 9.11 | kl 0.04 |
+| epoch  5 | 20000/35093 batches | 22.90 ms/batch | loss 9.17 | recon 9.13 | kl 0.04 |
+| epoch  5 | 25000/35093 batches | 22.91 ms/batch | loss 9.19 | recon 9.15 | kl 0.04 |
+| epoch  5 | 30000/35093 batches | 22.51 ms/batch | loss 9.16 | recon 9.12 | kl 0.04 |
+| epoch  5 | 35000/35093 batches | 22.58 ms/batch | loss 9.22 | recon 9.18 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch  5 | time 814.17s | kl_weight 0.55 | vae_lr 1.00 | loss 8.18
+| recon 8.14 | kl 0.04 | mi -0.02
+---------------------------------------------------------------------------
+| epoch  6 |  5000/35093 batches | 22.88 ms/batch | loss 9.18 | recon 9.14 | kl 0.04 |
+| epoch  6 | 10000/35093 batches | 22.85 ms/batch | loss 9.25 | recon 9.21 | kl 0.04 |
+| epoch  6 | 15000/35093 batches | 22.51 ms/batch | loss 9.19 | recon 9.15 | kl 0.04 |
+| epoch  6 | 20000/35093 batches | 22.66 ms/batch | loss 9.17 | recon 9.13 | kl 0.04 |
+| epoch  6 | 25000/35093 batches | 22.67 ms/batch | loss 9.16 | recon 9.12 | kl 0.04 |
+| epoch  6 | 30000/35093 batches | 22.77 ms/batch | loss 9.24 | recon 9.20 | kl 0.04 |
+| epoch  6 | 35000/35093 batches | 22.66 ms/batch | loss 9.27 | recon 9.23 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch  6 | time 811.59s | kl_weight 0.64 | vae_lr 1.00 | loss 8.64
+| recon 8.57 | kl 0.06 | mi 0.01
+---------------------------------------------------------------------------
+| epoch  7 |  5000/35093 batches | 22.72 ms/batch | loss 9.21 | recon 9.16 | kl 0.04 |
+| epoch  7 | 10000/35093 batches | 22.22 ms/batch | loss 9.12 | recon 9.08 | kl 0.04 |
+| epoch  7 | 15000/35093 batches | 22.74 ms/batch | loss 9.28 | recon 9.24 | kl 0.04 |
+| epoch  7 | 20000/35093 batches | 23.15 ms/batch | loss 9.30 | recon 9.26 | kl 0.04 |
+| epoch  7 | 25000/35093 batches | 22.46 ms/batch | loss 9.20 | recon 9.16 | kl 0.04 |
+| epoch  7 | 30000/35093 batches | 23.04 ms/batch | loss 9.25 | recon 9.21 | kl 0.04 |
+| epoch  7 | 35000/35093 batches | 22.95 ms/batch | loss 9.30 | recon 9.26 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch  7 | time 813.23s | kl_weight 0.73 | vae_lr 1.00 | loss 8.25
+| recon 8.22 | kl 0.03 | mi 0.03
+---------------------------------------------------------------------------
+| epoch  8 |  5000/35093 batches | 22.46 ms/batch | loss 9.20 | recon 9.16 | kl 0.04 |
+| epoch  8 | 10000/35093 batches | 22.97 ms/batch | loss 9.20 | recon 9.16 | kl 0.04 |
+| epoch  8 | 15000/35093 batches | 22.94 ms/batch | loss 9.19 | recon 9.15 | kl 0.04 |
+| epoch  8 | 20000/35093 batches | 22.74 ms/batch | loss 9.26 | recon 9.22 | kl 0.04 |
+| epoch  8 | 25000/35093 batches | 22.38 ms/batch | loss 9.18 | recon 9.15 | kl 0.04 |
+| epoch  8 | 30000/35093 batches | 22.22 ms/batch | loss 9.21 | recon 9.17 | kl 0.04 |
+| epoch  8 | 35000/35093 batches | 22.76 ms/batch | loss 9.12 | recon 9.09 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch  8 | time 808.17s | kl_weight 0.82 | vae_lr 1.00 | loss 8.37
+| recon 8.33 | kl 0.04 | mi -0.00
+---------------------------------------------------------------------------
+| epoch  9 |  5000/35093 batches | 22.61 ms/batch | loss 9.06 | recon 9.03 | kl 0.03 |
+| epoch  9 | 10000/35093 batches | 22.87 ms/batch | loss 9.03 | recon 8.99 | kl 0.03 |
+| epoch  9 | 15000/35093 batches | 23.03 ms/batch | loss 9.04 | recon 9.01 | kl 0.03 |
+| epoch  9 | 20000/35093 batches | 22.44 ms/batch | loss 8.98 | recon 8.95 | kl 0.03 |
+| epoch  9 | 25000/35093 batches | 22.48 ms/batch | loss 9.07 | recon 9.04 | kl 0.03 |
+| epoch  9 | 30000/35093 batches | 22.64 ms/batch | loss 9.10 | recon 9.06 | kl 0.03 |
+| epoch  9 | 35000/35093 batches | 22.67 ms/batch | loss 9.13 | recon 9.10 | kl 0.03 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch  9 | time 812.17s | kl_weight 0.91 | vae_lr 1.00 | loss 7.97
+| recon 7.94 | kl 0.03 | mi -0.03
+---------------------------------------------------------------------------
+| epoch 10 |  5000/35093 batches | 22.84 ms/batch | loss 8.90 | recon 8.87 | kl 0.03 |
+| epoch 10 | 10000/35093 batches | 22.92 ms/batch | loss 8.86 | recon 8.83 | kl 0.03 |
+| epoch 10 | 15000/35093 batches | 22.47 ms/batch | loss 8.97 | recon 8.94 | kl 0.03 |
+| epoch 10 | 20000/35093 batches | 22.64 ms/batch | loss 8.81 | recon 8.79 | kl 0.03 |
+| epoch 10 | 25000/35093 batches | 22.79 ms/batch | loss 8.80 | recon 8.77 | kl 0.03 |
+| epoch 10 | 30000/35093 batches | 22.40 ms/batch | loss 8.84 | recon 8.81 | kl 0.03 |
+| epoch 10 | 35000/35093 batches | 22.53 ms/batch | loss 8.82 | recon 8.79 | kl 0.03 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 10 | time 810.48s | kl_weight 1.00 | vae_lr 1.00 | loss 7.78
+| recon 7.75 | kl 0.04 | mi 0.03
+---------------------------------------------------------------------------
+| epoch 11 |  5000/35093 batches | 22.93 ms/batch | loss 8.64 | recon 8.61 | kl 0.03 |
+| epoch 11 | 10000/35093 batches | 22.44 ms/batch | loss 8.71 | recon 8.68 | kl 0.03 |
+| epoch 11 | 15000/35093 batches | 22.88 ms/batch | loss 8.69 | recon 8.66 | kl 0.03 |
+| epoch 11 | 20000/35093 batches | 22.97 ms/batch | loss 8.77 | recon 8.74 | kl 0.03 |
+| epoch 11 | 25000/35093 batches | 22.36 ms/batch | loss 8.68 | recon 8.65 | kl 0.03 |
+| epoch 11 | 30000/35093 batches | 22.48 ms/batch | loss 8.68 | recon 8.65 | kl 0.03 |
+| epoch 11 | 35000/35093 batches | 22.68 ms/batch | loss 8.70 | recon 8.66 | kl 0.04 |
+---------------------------------------------------------------------------
+| end of epoch 11 | time 810.55s | kl_weight 1.00 | vae_lr 1.00 | loss 7.87
+| recon 7.83 | kl 0.04 | mi -0.03
+---------------------------------------------------------------------------
+| epoch 12 |  5000/35093 batches | 22.80 ms/batch | loss 8.65 | recon 8.61 | kl 0.05 |
+| epoch 12 | 10000/35093 batches | 22.34 ms/batch | loss 8.63 | recon 8.57 | kl 0.05 |
+| epoch 12 | 15000/35093 batches | 22.63 ms/batch | loss 8.67 | recon 8.61 | kl 0.07 |
+| epoch 12 | 20000/35093 batches | 22.77 ms/batch | loss 8.63 | recon 8.55 | kl 0.08 |
+| epoch 12 | 25000/35093 batches | 22.53 ms/batch | loss 8.59 | recon 8.49 | kl 0.10 |
+| epoch 12 | 30000/35093 batches | 22.69 ms/batch | loss 8.66 | recon 8.54 | kl 0.13 |
+| epoch 12 | 35000/35093 batches | 22.99 ms/batch | loss 8.66 | recon 8.51 | kl 0.15 |
+---------------------------------------------------------------------------
+| end of epoch 12 | time 810.68s | kl_weight 1.00 | vae_lr 1.00 | loss 7.97
+| recon 7.75 | kl 0.22 | mi 0.14
+---------------------------------------------------------------------------
+| epoch 13 |  5000/35093 batches | 22.45 ms/batch | loss 8.57 | recon 8.39 | kl 0.18 |
+| epoch 13 | 10000/35093 batches | 22.72 ms/batch | loss 8.57 | recon 8.37 | kl 0.20 |
+| epoch 13 | 15000/35093 batches | 22.74 ms/batch | loss 8.67 | recon 8.46 | kl 0.21 |
+| epoch 13 | 20000/35093 batches | 22.48 ms/batch | loss 8.62 | recon 8.40 | kl 0.22 |
+| epoch 13 | 25000/35093 batches | 22.81 ms/batch | loss 8.59 | recon 8.36 | kl 0.24 |
+| epoch 13 | 30000/35093 batches | 22.53 ms/batch | loss 8.63 | recon 8.38 | kl 0.25 |
+| epoch 13 | 35000/35093 batches | 22.54 ms/batch | loss 8.64 | recon 8.38 | kl 0.26 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 13 | time 808.47s | kl_weight 1.00 | vae_lr 1.00 | loss 7.81
+| recon 7.51 | kl 0.30 | mi 0.18
+---------------------------------------------------------------------------
+| epoch 14 |  5000/35093 batches | 22.71 ms/batch | loss 8.56 | recon 8.30 | kl 0.26 |
+| epoch 14 | 10000/35093 batches | 23.17 ms/batch | loss 8.58 | recon 8.30 | kl 0.28 |
+| epoch 14 | 15000/35093 batches | 22.76 ms/batch | loss 8.59 | recon 8.28 | kl 0.31 |
+| epoch 14 | 20000/35093 batches | 22.67 ms/batch | loss 8.67 | recon 8.34 | kl 0.32 |
+| epoch 14 | 25000/35093 batches | 23.04 ms/batch | loss 8.66 | recon 8.32 | kl 0.34 |
+| epoch 14 | 30000/35093 batches | 22.66 ms/batch | loss 8.62 | recon 8.25 | kl 0.36 |
+| epoch 14 | 35000/35093 batches | 22.80 ms/batch | loss 8.66 | recon 8.25 | kl 0.41 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 14 | time 817.33s | kl_weight 1.00 | vae_lr 1.00 | loss 7.91
+| recon 7.36 | kl 0.55 | mi 0.41
+---------------------------------------------------------------------------
+| epoch 15 |  5000/35093 batches | 22.88 ms/batch | loss 8.61 | recon 8.13 | kl 0.48 |
+| epoch 15 | 10000/35093 batches | 22.84 ms/batch | loss 8.66 | recon 8.14 | kl 0.53 |
+| epoch 15 | 15000/35093 batches | 22.82 ms/batch | loss 8.65 | recon 8.11 | kl 0.54 |
+| epoch 15 | 20000/35093 batches | 22.80 ms/batch | loss 8.71 | recon 8.15 | kl 0.56 |
+| epoch 15 | 25000/35093 batches | 22.82 ms/batch | loss 8.76 | recon 8.16 | kl 0.59 |
+| epoch 15 | 30000/35093 batches | 22.45 ms/batch | loss 8.68 | recon 8.12 | kl 0.56 |
+| epoch 15 | 35000/35093 batches | 23.45 ms/batch | loss 8.75 | recon 8.13 | kl 0.62 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 15 | time 818.46s | kl_weight 1.00 | vae_lr 1.00 | loss 8.06
+| recon 7.16 | kl 0.90 | mi 0.70
+---------------------------------------------------------------------------
+| epoch 16 |  5000/35093 batches | 22.92 ms/batch | loss 8.67 | recon 8.03 | kl 0.64 |
+| epoch 16 | 10000/35093 batches | 22.31 ms/batch | loss 8.69 | recon 8.04 | kl 0.65 |
+| epoch 16 | 15000/35093 batches | 22.77 ms/batch | loss 8.69 | recon 8.02 | kl 0.67 |
+| epoch 16 | 20000/35093 batches | 22.96 ms/batch | loss 8.62 | recon 7.94 | kl 0.68 |
+| epoch 16 | 25000/35093 batches | 22.49 ms/batch | loss 8.70 | recon 8.00 | kl 0.70 |
+| epoch 16 | 30000/35093 batches | 23.26 ms/batch | loss 9.48 | recon 8.75 | kl 0.73 |
+| epoch 16 | 35000/35093 batches | 22.71 ms/batch | loss 8.74 | recon 8.00 | kl 0.74 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 16 | time 814.88s | kl_weight 1.00 | vae_lr 1.00 | loss 7.87
+| recon 6.99 | kl 0.87 | mi 0.73
+---------------------------------------------------------------------------
+| epoch 17 |  5000/35093 batches | 22.48 ms/batch | loss 8.63 | recon 7.86 | kl 0.76 |
+| epoch 17 | 10000/35093 batches | 22.90 ms/batch | loss 8.71 | recon 7.92 | kl 0.79 |
+| epoch 17 | 15000/35093 batches | 22.49 ms/batch | loss 8.69 | recon 7.86 | kl 0.83 |
+| epoch 17 | 20000/35093 batches | 22.42 ms/batch | loss 8.73 | recon 7.85 | kl 0.88 |
+| epoch 17 | 25000/35093 batches | 23.04 ms/batch | loss 8.73 | recon 7.81 | kl 0.92 |
+| epoch 17 | 30000/35093 batches | 22.53 ms/batch | loss 8.82 | recon 7.85 | kl 0.97 |
+| epoch 17 | 35000/35093 batches | 22.41 ms/batch | loss 8.81 | recon 7.81 | kl 1.00 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 17 | time 808.70s | kl_weight 1.00 | vae_lr 1.00 | loss 8.19
+| recon 6.87 | kl 1.32 | mi 1.07
+---------------------------------------------------------------------------
+| epoch 18 |  5000/35093 batches | 22.92 ms/batch | loss 8.77 | recon 7.73 | kl 1.04 |
+| epoch 18 | 10000/35093 batches | 23.01 ms/batch | loss 8.77 | recon 7.71 | kl 1.06 |
+| epoch 18 | 15000/35093 batches | 22.75 ms/batch | loss 8.83 | recon 7.73 | kl 1.10 |
+| epoch 18 | 20000/35093 batches | 23.00 ms/batch | loss 8.81 | recon 7.69 | kl 1.13 |
+| epoch 18 | 25000/35093 batches | 23.20 ms/batch | loss 8.87 | recon 7.70 | kl 1.16 |
+| epoch 18 | 30000/35093 batches | 22.44 ms/batch | loss 8.90 | recon 7.71 | kl 1.19 |
+| epoch 18 | 35000/35093 batches | 22.77 ms/batch | loss 8.98 | recon 7.78 | kl 1.20 |
+---------------------------------------------------------------------------
+| end of epoch 18 | time 818.09s | kl_weight 1.00 | vae_lr 0.80 | loss 8.52
+| recon 6.87 | kl 1.65 | mi 1.35
+---------------------------------------------------------------------------
+| epoch 19 |  5000/35093 batches | 22.69 ms/batch | loss 8.64 | recon 7.59 | kl 1.04 |
+| epoch 19 | 10000/35093 batches | 22.64 ms/batch | loss 8.60 | recon 7.52 | kl 1.07 |
+| epoch 19 | 15000/35093 batches | 23.10 ms/batch | loss 8.66 | recon 7.54 | kl 1.12 |
+| epoch 19 | 20000/35093 batches | 23.17 ms/batch | loss 8.70 | recon 7.55 | kl 1.15 |
+| epoch 19 | 25000/35093 batches | 22.53 ms/batch | loss 8.68 | recon 7.51 | kl 1.17 |
+| epoch 19 | 30000/35093 batches | 22.53 ms/batch | loss 8.62 | recon 7.44 | kl 1.18 |
+| epoch 19 | 35000/35093 batches | 22.95 ms/batch | loss 8.69 | recon 7.48 | kl 1.21 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 19 | time 816.17s | kl_weight 1.00 | vae_lr 0.80 | loss 8.13
+| recon 6.69 | kl 1.45 | mi 1.23
+---------------------------------------------------------------------------
+| epoch 20 |  5000/35093 batches | 22.53 ms/batch | loss 8.62 | recon 7.39 | kl 1.23 |
+| epoch 20 | 10000/35093 batches | 22.70 ms/batch | loss 9.14 | recon 7.89 | kl 1.25 |
+| epoch 20 | 15000/35093 batches | 22.74 ms/batch | loss 8.65 | recon 7.38 | kl 1.27 |
+| epoch 20 | 20000/35093 batches | 22.56 ms/batch | loss 8.68 | recon 7.40 | kl 1.28 |
+| epoch 20 | 25000/35093 batches | 22.61 ms/batch | loss 8.64 | recon 7.35 | kl 1.29 |
+| epoch 20 | 30000/35093 batches | 22.66 ms/batch | loss 8.68 | recon 7.38 | kl 1.30 |
+| epoch 20 | 35000/35093 batches | 22.32 ms/batch | loss 8.65 | recon 7.34 | kl 1.32 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 20 | time 808.49s | kl_weight 1.00 | vae_lr 0.80 | loss 8.22
+| recon 6.59 | kl 1.63 | mi 1.32
+---------------------------------------------------------------------------
+| epoch 21 |  5000/35093 batches | 22.74 ms/batch | loss 8.54 | recon 7.22 | kl 1.32 |
+| epoch 21 | 10000/35093 batches | 23.25 ms/batch | loss 8.64 | recon 7.28 | kl 1.36 |
+| epoch 21 | 15000/35093 batches | 22.63 ms/batch | loss 8.63 | recon 7.27 | kl 1.36 |
+| epoch 21 | 20000/35093 batches | 22.76 ms/batch | loss 8.65 | recon 7.29 | kl 1.36 |
+| epoch 21 | 25000/35093 batches | 22.95 ms/batch | loss 8.71 | recon 7.34 | kl 1.37 |
+| epoch 21 | 30000/35093 batches | 22.51 ms/batch | loss 8.67 | recon 7.29 | kl 1.38 |
+| epoch 21 | 35000/35093 batches | 22.53 ms/batch | loss 8.70 | recon 7.29 | kl 1.42 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 21 | time 815.03s | kl_weight 1.00 | vae_lr 0.80 | loss 8.38
+| recon 6.51 | kl 1.87 | mi 1.46
+---------------------------------------------------------------------------
+| epoch 22 |  5000/35093 batches | 23.10 ms/batch | loss 8.68 | recon 7.24 | kl 1.44 |
+| epoch 22 | 10000/35093 batches | 22.66 ms/batch | loss 8.60 | recon 7.16 | kl 1.44 |
+| epoch 22 | 15000/35093 batches | 22.89 ms/batch | loss 8.66 | recon 7.20 | kl 1.46 |
+| epoch 22 | 20000/35093 batches | 23.08 ms/batch | loss 8.61 | recon 7.14 | kl 1.47 |
+| epoch 22 | 25000/35093 batches | 22.50 ms/batch | loss 8.82 | recon 7.33 | kl 1.49 |
+| epoch 22 | 30000/35093 batches | 22.82 ms/batch | loss 8.67 | recon 7.17 | kl 1.50 |
+| epoch 22 | 35000/35093 batches | 23.17 ms/batch | loss 8.67 | recon 7.15 | kl 1.52 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 22 | time 819.57s | kl_weight 1.00 | vae_lr 0.80 | loss 8.33
+| recon 6.42 | kl 1.91 | mi 1.50
+---------------------------------------------------------------------------
+| epoch 23 |  5000/35093 batches | 22.53 ms/batch | loss 8.62 | recon 7.09 | kl 1.53 |
+| epoch 23 | 10000/35093 batches | 22.64 ms/batch | loss 8.64 | recon 7.09 | kl 1.55 |
+| epoch 23 | 15000/35093 batches | 22.94 ms/batch | loss 8.73 | recon 7.15 | kl 1.58 |
+| epoch 23 | 20000/35093 batches | 22.60 ms/batch | loss 8.66 | recon 7.09 | kl 1.57 |
+| epoch 23 | 25000/35093 batches | 22.89 ms/batch | loss 8.74 | recon 7.15 | kl 1.59 |
+| epoch 23 | 30000/35093 batches | 22.58 ms/batch | loss 8.70 | recon 7.10 | kl 1.60 |
+| epoch 23 | 35000/35093 batches | 22.96 ms/batch | loss 8.72 | recon 7.09 | kl 1.62 |
+---------------------------------------------------------------------------
+| end of epoch 23 | time 813.06s | kl_weight 1.00 | vae_lr 0.64 | loss 8.25
+| recon 6.43 | kl 1.83 | mi 1.48
+---------------------------------------------------------------------------
+| epoch 24 |  5000/35093 batches | 22.50 ms/batch | loss 8.52 | recon 6.99 | kl 1.53 |
+| epoch 24 | 10000/35093 batches | 23.00 ms/batch | loss 8.60 | recon 7.05 | kl 1.55 |
+| epoch 24 | 15000/35093 batches | 22.87 ms/batch | loss 8.56 | recon 6.99 | kl 1.57 |
+| epoch 24 | 20000/35093 batches | 22.49 ms/batch | loss 8.53 | recon 6.95 | kl 1.58 |
+| epoch 24 | 25000/35093 batches | 22.67 ms/batch | loss 8.58 | recon 6.98 | kl 1.60 |
+| epoch 24 | 30000/35093 batches | 23.19 ms/batch | loss 8.57 | recon 6.96 | kl 1.61 |
+| epoch 24 | 35000/35093 batches | 22.39 ms/batch | loss 8.55 | recon 6.94 | kl 1.60 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 24 | time 813.52s | kl_weight 1.00 | vae_lr 0.64 | loss 8.40
+| recon 6.41 | kl 2.00 | mi 1.60
+---------------------------------------------------------------------------
+| epoch 25 |  5000/35093 batches | 23.25 ms/batch | loss 8.55 | recon 6.93 | kl 1.62 |
+| epoch 25 | 10000/35093 batches | 22.80 ms/batch | loss 8.53 | recon 6.89 | kl 1.64 |
+| epoch 25 | 15000/35093 batches | 22.63 ms/batch | loss 8.58 | recon 6.93 | kl 1.65 |
+| epoch 25 | 20000/35093 batches | 23.00 ms/batch | loss 8.55 | recon 6.90 | kl 1.66 |
+| epoch 25 | 25000/35093 batches | 23.09 ms/batch | loss 8.64 | recon 6.94 | kl 1.70 |
+| epoch 25 | 30000/35093 batches | 22.45 ms/batch | loss 8.60 | recon 6.91 | kl 1.69 |
+| epoch 25 | 35000/35093 batches | 22.69 ms/batch | loss 8.61 | recon 6.91 | kl 1.70 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 25 | time 817.55s | kl_weight 1.00 | vae_lr 0.64 | loss 8.30
+| recon 6.28 | kl 2.02 | mi 1.69
+---------------------------------------------------------------------------
+| epoch 26 |  5000/35093 batches | 22.37 ms/batch | loss 8.54 | recon 6.81 | kl 1.73 |
+| epoch 26 | 10000/35093 batches | 22.57 ms/batch | loss 8.60 | recon 6.88 | kl 1.72 |
+| epoch 26 | 15000/35093 batches | 22.69 ms/batch | loss 8.59 | recon 6.83 | kl 1.76 |
+| epoch 26 | 20000/35093 batches | 23.16 ms/batch | loss 8.58 | recon 6.80 | kl 1.79 |
+| epoch 26 | 25000/35093 batches | 22.59 ms/batch | loss 8.61 | recon 6.80 | kl 1.81 |
+| epoch 26 | 30000/35093 batches | 22.44 ms/batch | loss 8.67 | recon 6.86 | kl 1.81 |
+| epoch 26 | 35000/35093 batches | 22.86 ms/batch | loss 8.68 | recon 6.86 | kl 1.82 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 26 | time 811.79s | kl_weight 1.00 | vae_lr 0.64 | loss 8.52
+| recon 6.24 | kl 2.28 | mi 1.79
+---------------------------------------------------------------------------
+| epoch 27 |  5000/35093 batches | 22.55 ms/batch | loss 8.56 | recon 6.73 | kl 1.83 |
+| epoch 27 | 10000/35093 batches | 22.89 ms/batch | loss 8.67 | recon 6.84 | kl 1.83 |
+| epoch 27 | 15000/35093 batches | 22.91 ms/batch | loss 8.67 | recon 6.82 | kl 1.85 |
+| epoch 27 | 20000/35093 batches | 22.59 ms/batch | loss 8.58 | recon 6.70 | kl 1.88 |
+| epoch 27 | 25000/35093 batches | 22.28 ms/batch | loss 8.65 | recon 6.77 | kl 1.88 |
+| epoch 27 | 30000/35093 batches | 22.65 ms/batch | loss 8.65 | recon 6.76 | kl 1.89 |
+| epoch 27 | 35000/35093 batches | 22.99 ms/batch | loss 8.69 | recon 6.77 | kl 1.92 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 27 | time 812.72s | kl_weight 1.00 | vae_lr 0.64 | loss 8.58
+| recon 6.11 | kl 2.47 | mi 1.93
+---------------------------------------------------------------------------
+| epoch 28 |  5000/35093 batches | 22.52 ms/batch | loss 8.58 | recon 6.65 | kl 1.93 |
+| epoch 28 | 10000/35093 batches | 22.67 ms/batch | loss 8.59 | recon 6.64 | kl 1.95 |
+| epoch 28 | 15000/35093 batches | 22.99 ms/batch | loss 8.69 | recon 6.71 | kl 1.98 |
+| epoch 28 | 20000/35093 batches | 22.45 ms/batch | loss 8.67 | recon 6.68 | kl 1.99 |
+| epoch 28 | 25000/35093 batches | 22.63 ms/batch | loss 8.67 | recon 6.68 | kl 1.99 |
+| epoch 28 | 30000/35093 batches | 23.18 ms/batch | loss 8.72 | recon 6.74 | kl 1.98 |
+| epoch 28 | 35000/35093 batches | 22.45 ms/batch | loss 8.72 | recon 6.70 | kl 2.02 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 28 | time 812.80s | kl_weight 1.00 | vae_lr 0.64 | loss 8.40
+| recon 6.09 | kl 2.31 | mi 1.87
+---------------------------------------------------------------------------
+| epoch 29 |  5000/35093 batches | 23.10 ms/batch | loss 8.65 | recon 6.62 | kl 2.03 |
+| epoch 29 | 10000/35093 batches | 23.03 ms/batch | loss 8.67 | recon 6.61 | kl 2.06 |
+| epoch 29 | 15000/35093 batches | 22.42 ms/batch | loss 8.73 | recon 6.65 | kl 2.08 |
+| epoch 29 | 20000/35093 batches | 22.49 ms/batch | loss 8.69 | recon 6.62 | kl 2.07 |
+| epoch 29 | 25000/35093 batches | 22.76 ms/batch | loss 8.70 | recon 6.61 | kl 2.09 |
+| epoch 29 | 30000/35093 batches | 22.70 ms/batch | loss 8.71 | recon 6.60 | kl 2.11 |
+| epoch 29 | 35000/35093 batches | 22.62 ms/batch | loss 8.70 | recon 6.68 | kl 2.02 |
+---------------------------------------------------------------------------
+| end of epoch 29 | time 812.12s | kl_weight 1.00 | vae_lr 0.51 | loss 8.73
+| recon 6.19 | kl 2.53 | mi 1.96
+---------------------------------------------------------------------------
+| epoch 30 |  5000/35093 batches | 23.05 ms/batch | loss 8.55 | recon 6.53 | kl 2.02 |
+| epoch 30 | 10000/35093 batches | 22.76 ms/batch | loss 8.59 | recon 6.54 | kl 2.05 |
+| epoch 30 | 15000/35093 batches | 22.87 ms/batch | loss 8.61 | recon 6.54 | kl 2.07 |
+| epoch 30 | 20000/35093 batches | 22.52 ms/batch | loss 8.57 | recon 6.51 | kl 2.07 |
+| epoch 30 | 25000/35093 batches | 22.68 ms/batch | loss 8.58 | recon 6.50 | kl 2.08 |
+| epoch 30 | 30000/35093 batches | 22.66 ms/batch | loss 8.64 | recon 6.55 | kl 2.09 |
+| epoch 30 | 35000/35093 batches | 22.65 ms/batch | loss 8.59 | recon 6.48 | kl 2.11 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 30 | time 813.70s | kl_weight 1.00 | vae_lr 0.51 | loss 8.45
+| recon 5.97 | kl 2.49 | mi 2.00
+---------------------------------------------------------------------------
+| epoch 31 |  5000/35093 batches | 22.48 ms/batch | loss 8.56 | recon 6.43 | kl 2.13 |
+| epoch 31 | 10000/35093 batches | 22.61 ms/batch | loss 8.62 | recon 6.46 | kl 2.16 |
+| epoch 31 | 15000/35093 batches | 22.93 ms/batch | loss 8.55 | recon 6.47 | kl 2.08 |
+| epoch 31 | 20000/35093 batches | 22.86 ms/batch | loss 8.41 | recon 6.52 | kl 1.90 |
+| epoch 31 | 25000/35093 batches | 22.53 ms/batch | loss 8.52 | recon 6.52 | kl 1.99 |
+| epoch 31 | 30000/35093 batches | 22.40 ms/batch | loss 8.61 | recon 6.56 | kl 2.06 |
+| epoch 31 | 35000/35093 batches | 23.28 ms/batch | loss 8.62 | recon 6.53 | kl 2.09 |
+---------------------------------------------------------------------------
+| end of epoch 31 | time 813.68s | kl_weight 1.00 | vae_lr 0.41 | loss 8.40
+| recon 6.00 | kl 2.40 | mi 1.92
+---------------------------------------------------------------------------
+| epoch 32 |  5000/35093 batches | 22.55 ms/batch | loss 8.39 | recon 6.35 | kl 2.04 |
+| epoch 32 | 10000/35093 batches | 22.78 ms/batch | loss 8.47 | recon 6.44 | kl 2.03 |
+| epoch 32 | 15000/35093 batches | 22.48 ms/batch | loss 8.54 | recon 6.49 | kl 2.05 |
+| epoch 32 | 20000/35093 batches | 22.50 ms/batch | loss 8.49 | recon 6.44 | kl 2.05 |
+| epoch 32 | 25000/35093 batches | 22.44 ms/batch | loss 8.42 | recon 6.36 | kl 2.06 |
+| epoch 32 | 30000/35093 batches | 22.71 ms/batch | loss 8.39 | recon 6.33 | kl 2.05 |
+| epoch 32 | 35000/35093 batches | 22.92 ms/batch | loss 8.52 | recon 6.42 | kl 2.10 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 32 | time 810.04s | kl_weight 1.00 | vae_lr 0.41 | loss 8.21
+| recon 5.90 | kl 2.30 | mi 1.85
+---------------------------------------------------------------------------
+| epoch 33 |  5000/35093 batches | 22.60 ms/batch | loss 8.41 | recon 6.29 | kl 2.12 |
+| epoch 33 | 10000/35093 batches | 23.35 ms/batch | loss 8.47 | recon 6.34 | kl 2.13 |
+| epoch 33 | 15000/35093 batches | 22.76 ms/batch | loss 8.45 | recon 6.32 | kl 2.12 |
+| epoch 33 | 20000/35093 batches | 22.27 ms/batch | loss 8.40 | recon 6.30 | kl 2.10 |
+| epoch 33 | 25000/35093 batches | 22.75 ms/batch | loss 8.41 | recon 6.31 | kl 2.10 |
+| epoch 33 | 30000/35093 batches | 23.30 ms/batch | loss 8.44 | recon 6.32 | kl 2.11 |
+| epoch 33 | 35000/35093 batches | 22.40 ms/batch | loss 8.52 | recon 6.40 | kl 2.12 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 33 | time 814.66s | kl_weight 1.00 | vae_lr 0.41 | loss 8.38
+| recon 5.79 | kl 2.58 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 34 |  5000/35093 batches | 23.14 ms/batch | loss 8.40 | recon 6.33 | kl 2.06 |
+| epoch 34 | 10000/35093 batches | 22.92 ms/batch | loss 8.38 | recon 6.31 | kl 2.06 |
+| epoch 34 | 15000/35093 batches | 22.36 ms/batch | loss 8.35 | recon 6.29 | kl 2.06 |
+| epoch 34 | 20000/35093 batches | 23.06 ms/batch | loss 8.41 | recon 6.27 | kl 2.14 |
+| epoch 34 | 25000/35093 batches | 23.20 ms/batch | loss 8.48 | recon 6.32 | kl 2.17 |
+| epoch 34 | 30000/35093 batches | 22.55 ms/batch | loss 8.48 | recon 6.31 | kl 2.17 |
+| epoch 34 | 35000/35093 batches | 22.80 ms/batch | loss 8.51 | recon 6.33 | kl 2.18 |
+---------------------------------------------------------------------------
+| end of epoch 34 | time 817.14s | kl_weight 1.00 | vae_lr 0.33 | loss 8.41
+| recon 5.85 | kl 2.55 | mi 2.00
+---------------------------------------------------------------------------
+| epoch 35 |  5000/35093 batches | 22.79 ms/batch | loss 8.34 | recon 6.27 | kl 2.07 |
+| epoch 35 | 10000/35093 batches | 22.56 ms/batch | loss 8.31 | recon 6.27 | kl 2.04 |
+| epoch 35 | 15000/35093 batches | 22.92 ms/batch | loss 8.35 | recon 6.30 | kl 2.05 |
+| epoch 35 | 20000/35093 batches | 22.95 ms/batch | loss 8.37 | recon 6.29 | kl 2.08 |
+| epoch 35 | 25000/35093 batches | 22.84 ms/batch | loss 8.30 | recon 6.28 | kl 2.02 |
+| epoch 35 | 30000/35093 batches | 22.59 ms/batch | loss 8.29 | recon 6.26 | kl 2.03 |
+| epoch 35 | 35000/35093 batches | 22.76 ms/batch | loss 8.32 | recon 6.29 | kl 2.03 |
+---------------------------------------------------------------------------
+| end of epoch 35 | time 813.29s | kl_weight 1.00 | vae_lr 0.16 | loss 8.44
+| recon 5.94 | kl 2.50 | mi 1.96
+---------------------------------------------------------------------------
+| epoch 36 |  5000/35093 batches | 22.65 ms/batch | loss 8.24 | recon 6.13 | kl 2.11 |
+| epoch 36 | 10000/35093 batches | 22.60 ms/batch | loss 8.19 | recon 6.10 | kl 2.09 |
+| epoch 36 | 15000/35093 batches | 22.77 ms/batch | loss 8.20 | recon 6.13 | kl 2.07 |
+| epoch 36 | 20000/35093 batches | 22.76 ms/batch | loss 8.28 | recon 6.17 | kl 2.11 |
+| epoch 36 | 25000/35093 batches | 22.45 ms/batch | loss 8.16 | recon 6.06 | kl 2.10 |
+| epoch 36 | 30000/35093 batches | 22.80 ms/batch | loss 8.22 | recon 6.20 | kl 2.02 |
+| epoch 36 | 35000/35093 batches | 22.88 ms/batch | loss 8.16 | recon 6.13 | kl 2.02 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 36 | time 812.34s | kl_weight 1.00 | vae_lr 0.16 | loss 8.10
+| recon 5.76 | kl 2.34 | mi 1.85
+---------------------------------------------------------------------------
+| epoch 37 |  5000/35093 batches | 22.45 ms/batch | loss 8.05 | recon 6.06 | kl 1.99 |
+| epoch 37 | 10000/35093 batches | 22.94 ms/batch | loss 8.05 | recon 6.06 | kl 1.99 |
+| epoch 37 | 15000/35093 batches | 23.05 ms/batch | loss 8.09 | recon 6.05 | kl 2.04 |
+| epoch 37 | 20000/35093 batches | 22.62 ms/batch | loss 8.17 | recon 6.11 | kl 2.06 |
+| epoch 37 | 25000/35093 batches | 22.78 ms/batch | loss 8.12 | recon 6.05 | kl 2.06 |
+| epoch 37 | 30000/35093 batches | 23.11 ms/batch | loss 8.16 | recon 6.09 | kl 2.07 |
+| epoch 37 | 35000/35093 batches | 22.75 ms/batch | loss 8.13 | recon 6.06 | kl 2.07 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 37 | time 815.73s | kl_weight 1.00 | vae_lr 0.16 | loss 8.23
+| recon 5.68 | kl 2.55 | mi 1.99
+---------------------------------------------------------------------------
+| epoch 38 |  5000/35093 batches | 22.73 ms/batch | loss 8.03 | recon 6.00 | kl 2.03 |
+| epoch 38 | 10000/35093 batches | 22.82 ms/batch | loss 8.03 | recon 6.00 | kl 2.03 |
+| epoch 38 | 15000/35093 batches | 22.92 ms/batch | loss 8.09 | recon 6.04 | kl 2.05 |
+| epoch 38 | 20000/35093 batches | 22.47 ms/batch | loss 8.13 | recon 6.03 | kl 2.10 |
+| epoch 38 | 25000/35093 batches | 22.60 ms/batch | loss 8.12 | recon 6.01 | kl 2.11 |
+| epoch 38 | 30000/35093 batches | 22.79 ms/batch | loss 8.14 | recon 6.00 | kl 2.13 |
+| epoch 38 | 35000/35093 batches | 22.61 ms/batch | loss 8.13 | recon 6.02 | kl 2.11 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 38 | time 812.18s | kl_weight 1.00 | vae_lr 0.16 | loss 8.18
+| recon 5.68 | kl 2.50 | mi 1.96
+---------------------------------------------------------------------------
+| epoch 39 |  5000/35093 batches | 22.93 ms/batch | loss 8.07 | recon 5.94 | kl 2.13 |
+| epoch 39 | 10000/35093 batches | 22.70 ms/batch | loss 8.05 | recon 5.90 | kl 2.15 |
+| epoch 39 | 15000/35093 batches | 22.56 ms/batch | loss 8.13 | recon 5.98 | kl 2.15 |
+| epoch 39 | 20000/35093 batches | 22.32 ms/batch | loss 8.11 | recon 5.97 | kl 2.14 |
+| epoch 39 | 25000/35093 batches | 22.90 ms/batch | loss 8.14 | recon 5.97 | kl 2.17 |
+| epoch 39 | 30000/35093 batches | 22.47 ms/batch | loss 8.15 | recon 6.00 | kl 2.16 |
+| epoch 39 | 35000/35093 batches | 23.18 ms/batch | loss 8.18 | recon 6.00 | kl 2.17 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 39 | time 813.34s | kl_weight 1.00 | vae_lr 0.16 | loss 8.30
+| recon 5.66 | kl 2.64 | mi 2.05
+---------------------------------------------------------------------------
+| epoch 40 |  5000/35093 batches | 22.95 ms/batch | loss 8.05 | recon 5.86 | kl 2.19 |
+| epoch 40 | 10000/35093 batches | 22.57 ms/batch | loss 8.08 | recon 5.89 | kl 2.18 |
+| epoch 40 | 15000/35093 batches | 23.08 ms/batch | loss 8.11 | recon 5.91 | kl 2.20 |
+| epoch 40 | 20000/35093 batches | 22.88 ms/batch | loss 8.13 | recon 5.92 | kl 2.21 |
+| epoch 40 | 25000/35093 batches | 23.02 ms/batch | loss 8.20 | recon 5.98 | kl 2.22 |
+| epoch 40 | 30000/35093 batches | 22.76 ms/batch | loss 8.17 | recon 5.96 | kl 2.21 |
+| epoch 40 | 35000/35093 batches | 23.18 ms/batch | loss 8.18 | recon 5.98 | kl 2.20 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 40 | time 820.71s | kl_weight 1.00 | vae_lr 0.16 | loss 8.32
+| recon 5.54 | kl 2.79 | mi 2.19
+---------------------------------------------------------------------------
+| epoch 41 |  5000/35093 batches | 22.84 ms/batch | loss 8.05 | recon 5.84 | kl 2.21 |
+| epoch 41 | 10000/35093 batches | 22.57 ms/batch | loss 8.10 | recon 5.92 | kl 2.18 |
+| epoch 41 | 15000/35093 batches | 23.21 ms/batch | loss 8.11 | recon 5.90 | kl 2.20 |
+| epoch 41 | 20000/35093 batches | 22.68 ms/batch | loss 8.13 | recon 5.93 | kl 2.20 |
+| epoch 41 | 25000/35093 batches | 22.53 ms/batch | loss 8.16 | recon 5.95 | kl 2.21 |
+| epoch 41 | 30000/35093 batches | 22.76 ms/batch | loss 8.13 | recon 5.93 | kl 2.20 |
+| epoch 41 | 35000/35093 batches | 22.91 ms/batch | loss 8.22 | recon 5.99 | kl 2.23 |
+---------------------------------------------------------------------------
+| end of epoch 41 | time 813.78s | kl_weight 1.00 | vae_lr 0.13 | loss 8.17
+| recon 5.74 | kl 2.43 | mi 1.97
+---------------------------------------------------------------------------
+| epoch 42 |  5000/35093 batches | 22.59 ms/batch | loss 8.06 | recon 5.84 | kl 2.21 |
+| epoch 42 | 10000/35093 batches | 22.79 ms/batch | loss 8.07 | recon 5.87 | kl 2.20 |
+| epoch 42 | 15000/35093 batches | 22.81 ms/batch | loss 8.09 | recon 5.88 | kl 2.21 |
+| epoch 42 | 20000/35093 batches | 22.21 ms/batch | loss 8.03 | recon 5.83 | kl 2.20 |
+| epoch 42 | 25000/35093 batches | 22.86 ms/batch | loss 8.15 | recon 5.94 | kl 2.21 |
+| epoch 42 | 30000/35093 batches | 22.39 ms/batch | loss 8.07 | recon 5.86 | kl 2.21 |
+| epoch 42 | 35000/35093 batches | 22.38 ms/batch | loss 8.07 | recon 5.85 | kl 2.23 |
+---------------------------------------------------------------------------
+| end of epoch 42 | time 806.17s | kl_weight 1.00 | vae_lr 0.07 | loss 8.28
+| recon 5.61 | kl 2.67 | mi 2.06
+---------------------------------------------------------------------------
+| epoch 43 |  5000/35093 batches | 22.65 ms/batch | loss 8.05 | recon 5.85 | kl 2.21 |
+| epoch 43 | 10000/35093 batches | 23.06 ms/batch | loss 7.99 | recon 5.79 | kl 2.20 |
+| epoch 43 | 15000/35093 batches | 22.77 ms/batch | loss 8.02 | recon 5.83 | kl 2.20 |
+| epoch 43 | 20000/35093 batches | 22.40 ms/batch | loss 8.02 | recon 5.81 | kl 2.20 |
+| epoch 43 | 25000/35093 batches | 22.79 ms/batch | loss 8.01 | recon 5.80 | kl 2.21 |
+| epoch 43 | 30000/35093 batches | 22.63 ms/batch | loss 8.03 | recon 5.79 | kl 2.23 |
+| epoch 43 | 35000/35093 batches | 22.57 ms/batch | loss 8.05 | recon 5.84 | kl 2.21 |
+---------------------------------------------------------------------------
+| end of epoch 43 | time 811.37s | kl_weight 1.00 | vae_lr 0.05 | loss 8.16
+| recon 5.61 | kl 2.56 | mi 2.00
+---------------------------------------------------------------------------
+| epoch 44 |  5000/35093 batches | 23.09 ms/batch | loss 7.96 | recon 5.76 | kl 2.20 |
+| epoch 44 | 10000/35093 batches | 22.86 ms/batch | loss 7.99 | recon 5.79 | kl 2.20 |
+| epoch 44 | 15000/35093 batches | 22.50 ms/batch | loss 8.02 | recon 5.81 | kl 2.21 |
+| epoch 44 | 20000/35093 batches | 22.79 ms/batch | loss 8.06 | recon 5.86 | kl 2.19 |
+| epoch 44 | 25000/35093 batches | 23.03 ms/batch | loss 8.03 | recon 5.83 | kl 2.20 |
+| epoch 44 | 30000/35093 batches | 22.19 ms/batch | loss 7.97 | recon 5.79 | kl 2.18 |
+| epoch 44 | 35000/35093 batches | 22.51 ms/batch | loss 8.04 | recon 5.87 | kl 2.17 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 44 | time 813.65s | kl_weight 1.00 | vae_lr 0.05 | loss 8.07
+| recon 5.49 | kl 2.58 | mi 2.05
+---------------------------------------------------------------------------
+| epoch 45 |  5000/35093 batches | 22.63 ms/batch | loss 7.92 | recon 5.78 | kl 2.15 |
+| epoch 45 | 10000/35093 batches | 22.51 ms/batch | loss 7.93 | recon 5.76 | kl 2.17 |
+| epoch 45 | 15000/35093 batches | 22.98 ms/batch | loss 8.03 | recon 5.82 | kl 2.21 |
+| epoch 45 | 20000/35093 batches | 22.94 ms/batch | loss 8.03 | recon 5.84 | kl 2.19 |
+| epoch 45 | 25000/35093 batches | 22.76 ms/batch | loss 7.99 | recon 5.80 | kl 2.19 |
+| epoch 45 | 30000/35093 batches | 22.68 ms/batch | loss 7.99 | recon 5.80 | kl 2.19 |
+| epoch 45 | 35000/35093 batches | 22.85 ms/batch | loss 8.05 | recon 5.85 | kl 2.20 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 45 | time 814.66s | kl_weight 1.00 | vae_lr 0.05 | loss 8.03
+| recon 5.49 | kl 2.55 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 46 |  5000/35093 batches | 22.72 ms/batch | loss 7.94 | recon 5.74 | kl 2.20 |
+| epoch 46 | 10000/35093 batches | 22.61 ms/batch | loss 7.94 | recon 5.75 | kl 2.19 |
+| epoch 46 | 15000/35093 batches | 22.95 ms/batch | loss 7.96 | recon 5.78 | kl 2.17 |
+| epoch 46 | 20000/35093 batches | 22.96 ms/batch | loss 8.05 | recon 5.87 | kl 2.18 |
+| epoch 46 | 25000/35093 batches | 22.62 ms/batch | loss 7.96 | recon 5.80 | kl 2.16 |
+| epoch 46 | 30000/35093 batches | 22.78 ms/batch | loss 7.99 | recon 5.81 | kl 2.18 |
+| epoch 46 | 35000/35093 batches | 22.76 ms/batch | loss 8.02 | recon 5.83 | kl 2.19 |
+---------------------------------------------------------------------------
+| end of epoch 46 | time 814.11s | kl_weight 1.00 | vae_lr 0.04 | loss 8.20
+| recon 5.60 | kl 2.60 | mi 2.07
+---------------------------------------------------------------------------
+| epoch 47 |  5000/35093 batches | 22.33 ms/batch | loss 7.93 | recon 5.73 | kl 2.20 |
+| epoch 47 | 10000/35093 batches | 22.56 ms/batch | loss 7.96 | recon 5.75 | kl 2.20 |
+| epoch 47 | 15000/35093 batches | 23.14 ms/batch | loss 7.95 | recon 5.74 | kl 2.21 |
+| epoch 47 | 20000/35093 batches | 22.56 ms/batch | loss 7.98 | recon 5.79 | kl 2.20 |
+| epoch 47 | 25000/35093 batches | 22.45 ms/batch | loss 7.98 | recon 5.80 | kl 2.18 |
+| epoch 47 | 30000/35093 batches | 23.10 ms/batch | loss 7.99 | recon 5.83 | kl 2.16 |
+| epoch 47 | 35000/35093 batches | 22.58 ms/batch | loss 7.99 | recon 5.82 | kl 2.17 |
+---------------------------------------------------------------------------
+| end of epoch 47 | time 809.86s | kl_weight 1.00 | vae_lr 0.02 | loss 7.96
+| recon 5.50 | kl 2.46 | mi 1.99
+---------------------------------------------------------------------------
+| epoch 48 |  5000/35093 batches | 22.93 ms/batch | loss 7.89 | recon 5.70 | kl 2.19 |
+| epoch 48 | 10000/35093 batches | 23.05 ms/batch | loss 8.00 | recon 5.78 | kl 2.22 |
+| epoch 48 | 15000/35093 batches | 22.47 ms/batch | loss 7.91 | recon 5.71 | kl 2.20 |
+| epoch 48 | 20000/35093 batches | 22.87 ms/batch | loss 7.97 | recon 5.77 | kl 2.20 |
+| epoch 48 | 25000/35093 batches | 22.91 ms/batch | loss 7.98 | recon 5.78 | kl 2.20 |
+| epoch 48 | 30000/35093 batches | 22.69 ms/batch | loss 7.97 | recon 5.79 | kl 2.19 |
+| epoch 48 | 35000/35093 batches | 22.69 ms/batch | loss 7.99 | recon 5.79 | kl 2.19 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 48 | time 816.70s | kl_weight 1.00 | vae_lr 0.02 | loss 8.05
+| recon 5.48 | kl 2.56 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 49 |  5000/35093 batches | 22.83 ms/batch | loss 7.87 | recon 5.68 | kl 2.19 |
+| epoch 49 | 10000/35093 batches | 22.48 ms/batch | loss 7.96 | recon 5.77 | kl 2.19 |
+| epoch 49 | 15000/35093 batches | 22.53 ms/batch | loss 7.94 | recon 5.79 | kl 2.15 |
+| epoch 49 | 20000/35093 batches | 23.02 ms/batch | loss 7.93 | recon 5.79 | kl 2.14 |
+| epoch 49 | 25000/35093 batches | 22.36 ms/batch | loss 7.97 | recon 5.89 | kl 2.08 |
+| epoch 49 | 30000/35093 batches | 22.52 ms/batch | loss 7.96 | recon 5.95 | kl 2.01 |
+| epoch 49 | 35000/35093 batches | 22.66 ms/batch | loss 7.95 | recon 5.92 | kl 2.03 |
+---------------------------------------------------------------------------
+| end of epoch 49 | time 810.01s | kl_weight 1.00 | vae_lr 0.02 | loss 7.92
+| recon 5.67 | kl 2.25 | mi 1.83
+---------------------------------------------------------------------------
+| epoch 50 |  5000/35093 batches | 23.14 ms/batch | loss 7.89 | recon 5.74 | kl 2.16 |
+| epoch 50 | 10000/35093 batches | 22.70 ms/batch | loss 7.89 | recon 5.72 | kl 2.17 |
+| epoch 50 | 15000/35093 batches | 22.77 ms/batch | loss 7.88 | recon 5.69 | kl 2.18 |
+| epoch 50 | 20000/35093 batches | 22.44 ms/batch | loss 7.94 | recon 5.75 | kl 2.18 |
+| epoch 50 | 25000/35093 batches | 22.52 ms/batch | loss 7.97 | recon 5.78 | kl 2.19 |
+| epoch 50 | 30000/35093 batches | 22.35 ms/batch | loss 7.93 | recon 5.74 | kl 2.20 |
+| epoch 50 | 35000/35093 batches | 22.57 ms/batch | loss 8.03 | recon 5.83 | kl 2.21 |
+---------------------------------------------------------------------------
+| end of epoch 50 | time 809.35s | kl_weight 1.00 | vae_lr 0.01 | loss 8.11
+| recon 5.51 | kl 2.60 | mi 2.08
+---------------------------------------------------------------------------
+| epoch 51 |  5000/35093 batches | 22.32 ms/batch | loss 7.83 | recon 5.66 | kl 2.17 |
+| epoch 51 | 10000/35093 batches | 22.75 ms/batch | loss 7.93 | recon 5.76 | kl 2.17 |
+| epoch 51 | 15000/35093 batches | 23.09 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+| epoch 51 | 20000/35093 batches | 22.65 ms/batch | loss 7.93 | recon 5.75 | kl 2.18 |
+| epoch 51 | 25000/35093 batches | 22.78 ms/batch | loss 8.00 | recon 5.85 | kl 2.15 |
+| epoch 51 | 30000/35093 batches | 23.24 ms/batch | loss 7.97 | recon 5.83 | kl 2.15 |
+| epoch 51 | 35000/35093 batches | 22.99 ms/batch | loss 7.97 | recon 5.82 | kl 2.15 |
+---------------------------------------------------------------------------
+| end of epoch 51 | time 816.06s | kl_weight 1.00 | vae_lr 0.01 | loss 8.03
+| recon 5.56 | kl 2.48 | mi 1.99
+---------------------------------------------------------------------------
+| epoch 52 |  5000/35093 batches | 22.41 ms/batch | loss 7.91 | recon 5.73 | kl 2.18 |
+| epoch 52 | 10000/35093 batches | 22.88 ms/batch | loss 7.91 | recon 5.73 | kl 2.18 |
+| epoch 52 | 15000/35093 batches | 22.63 ms/batch | loss 7.89 | recon 5.73 | kl 2.16 |
+| epoch 52 | 20000/35093 batches | 22.41 ms/batch | loss 7.92 | recon 5.77 | kl 2.15 |
+| epoch 52 | 25000/35093 batches | 22.35 ms/batch | loss 7.98 | recon 5.86 | kl 2.13 |
+| epoch 52 | 30000/35093 batches | 23.02 ms/batch | loss 7.91 | recon 5.78 | kl 2.12 |
+| epoch 52 | 35000/35093 batches | 22.50 ms/batch | loss 7.96 | recon 5.83 | kl 2.13 |
+---------------------------------------------------------------------------
+| end of epoch 52 | time 807.34s | kl_weight 1.00 | vae_lr 0.00 | loss 8.02
+| recon 5.52 | kl 2.50 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 53 |  5000/35093 batches | 22.71 ms/batch | loss 7.94 | recon 5.75 | kl 2.19 |
+| epoch 53 | 10000/35093 batches | 22.96 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+| epoch 53 | 15000/35093 batches | 22.54 ms/batch | loss 7.90 | recon 5.74 | kl 2.17 |
+| epoch 53 | 20000/35093 batches | 23.07 ms/batch | loss 7.95 | recon 5.77 | kl 2.18 |
+| epoch 53 | 25000/35093 batches | 22.73 ms/batch | loss 7.95 | recon 5.78 | kl 2.18 |
+| epoch 53 | 30000/35093 batches | 22.74 ms/batch | loss 7.97 | recon 5.79 | kl 2.18 |
+| epoch 53 | 35000/35093 batches | 22.53 ms/batch | loss 7.95 | recon 5.76 | kl 2.19 |
+---------------------------------------------------------------------------
+| end of epoch 53 | time 813.11s | kl_weight 1.00 | vae_lr 0.00 | loss 7.99
+| recon 5.57 | kl 2.42 | mi 1.97
+---------------------------------------------------------------------------
+| epoch 54 |  5000/35093 batches | 23.21 ms/batch | loss 7.87 | recon 5.70 | kl 2.17 |
+| epoch 54 | 10000/35093 batches | 22.86 ms/batch | loss 7.93 | recon 5.75 | kl 2.18 |
+| epoch 54 | 15000/35093 batches | 22.67 ms/batch | loss 7.95 | recon 5.77 | kl 2.18 |
+| epoch 54 | 20000/35093 batches | 22.81 ms/batch | loss 8.00 | recon 5.83 | kl 2.18 |
+| epoch 54 | 25000/35093 batches | 22.64 ms/batch | loss 7.97 | recon 5.78 | kl 2.18 |
+| epoch 54 | 30000/35093 batches | 22.51 ms/batch | loss 7.96 | recon 5.78 | kl 2.18 |
+| epoch 54 | 35000/35093 batches | 22.68 ms/batch | loss 8.01 | recon 5.83 | kl 2.18 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 54 | time 814.84s | kl_weight 1.00 | vae_lr 0.00 | loss 8.05
+| recon 5.41 | kl 2.64 | mi 2.10
+---------------------------------------------------------------------------
+| epoch 55 |  5000/35093 batches | 22.77 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+| epoch 55 | 10000/35093 batches | 22.49 ms/batch | loss 7.92 | recon 5.75 | kl 2.17 |
+| epoch 55 | 15000/35093 batches | 22.67 ms/batch | loss 7.91 | recon 5.75 | kl 2.17 |
+| epoch 55 | 20000/35093 batches | 23.10 ms/batch | loss 8.00 | recon 5.81 | kl 2.19 |
+| epoch 55 | 25000/35093 batches | 22.52 ms/batch | loss 7.96 | recon 5.80 | kl 2.16 |
+| epoch 55 | 30000/35093 batches | 22.84 ms/batch | loss 7.95 | recon 5.79 | kl 2.16 |
+| epoch 55 | 35000/35093 batches | 22.77 ms/batch | loss 7.99 | recon 5.84 | kl 2.16 |
+---------------------------------------------------------------------------
+| end of epoch 55 | time 812.16s | kl_weight 1.00 | vae_lr 0.00 | loss 8.03
+| recon 5.54 | kl 2.49 | mi 1.97
+---------------------------------------------------------------------------
+| epoch 56 |  5000/35093 batches | 22.55 ms/batch | loss 7.89 | recon 5.73 | kl 2.16 |
+| epoch 56 | 10000/35093 batches | 22.92 ms/batch | loss 7.85 | recon 5.69 | kl 2.15 |
+| epoch 56 | 15000/35093 batches | 22.55 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+| epoch 56 | 20000/35093 batches | 22.51 ms/batch | loss 8.02 | recon 5.85 | kl 2.17 |
+| epoch 56 | 25000/35093 batches | 22.68 ms/batch | loss 8.02 | recon 5.84 | kl 2.17 |
+| epoch 56 | 30000/35093 batches | 23.42 ms/batch | loss 7.98 | recon 5.81 | kl 2.18 |
+| epoch 56 | 35000/35093 batches | 22.78 ms/batch | loss 7.93 | recon 5.76 | kl 2.17 |
+---------------------------------------------------------------------------
+| end of epoch 56 | time 813.76s | kl_weight 1.00 | vae_lr 0.00 | loss 8.14
+| recon 5.52 | kl 2.62 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 57 |  5000/35093 batches | 22.76 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+| epoch 57 | 10000/35093 batches | 22.89 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+| epoch 57 | 15000/35093 batches | 22.95 ms/batch | loss 7.93 | recon 5.76 | kl 2.16 |
+| epoch 57 | 20000/35093 batches | 22.60 ms/batch | loss 7.95 | recon 5.79 | kl 2.17 |
+| epoch 57 | 25000/35093 batches | 23.17 ms/batch | loss 7.95 | recon 5.78 | kl 2.17 |
+| epoch 57 | 30000/35093 batches | 22.83 ms/batch | loss 7.97 | recon 5.80 | kl 2.16 |
+| epoch 57 | 35000/35093 batches | 22.44 ms/batch | loss 7.99 | recon 5.89 | kl 2.09 |
+---------------------------------------------------------------------------
+| end of epoch 57 | time 814.64s | kl_weight 1.00 | vae_lr 0.00 | loss 8.30
+| recon 5.82 | kl 2.48 | mi 1.87
+---------------------------------------------------------------------------
+| epoch 58 |  5000/35093 batches | 22.90 ms/batch | loss 7.86 | recon 5.69 | kl 2.16 |
+| epoch 58 | 10000/35093 batches | 22.94 ms/batch | loss 7.96 | recon 5.78 | kl 2.18 |
+| epoch 58 | 15000/35093 batches | 22.43 ms/batch | loss 7.92 | recon 5.75 | kl 2.17 |
+| epoch 58 | 20000/35093 batches | 23.22 ms/batch | loss 7.96 | recon 5.77 | kl 2.19 |
+| epoch 58 | 25000/35093 batches | 22.63 ms/batch | loss 7.91 | recon 5.74 | kl 2.17 |
+| epoch 58 | 30000/35093 batches | 22.49 ms/batch | loss 7.98 | recon 5.81 | kl 2.17 |
+| epoch 58 | 35000/35093 batches | 22.88 ms/batch | loss 7.92 | recon 5.75 | kl 2.17 |
+---------------------------------------------------------------------------
+| end of epoch 58 | time 814.71s | kl_weight 1.00 | vae_lr 0.00 | loss 8.15
+| recon 5.58 | kl 2.57 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 59 |  5000/35093 batches | 22.89 ms/batch | loss 7.88 | recon 5.72 | kl 2.16 |
+| epoch 59 | 10000/35093 batches | 22.23 ms/batch | loss 7.92 | recon 5.76 | kl 2.16 |
+| epoch 59 | 15000/35093 batches | 22.77 ms/batch | loss 8.02 | recon 5.85 | kl 2.17 |
+| epoch 59 | 20000/35093 batches | 22.87 ms/batch | loss 7.95 | recon 5.80 | kl 2.15 |
+| epoch 59 | 25000/35093 batches | 22.79 ms/batch | loss 7.95 | recon 5.78 | kl 2.17 |
+| epoch 59 | 30000/35093 batches | 22.78 ms/batch | loss 8.00 | recon 5.82 | kl 2.18 |
+| epoch 59 | 35000/35093 batches | 22.81 ms/batch | loss 7.94 | recon 5.75 | kl 2.18 |
+---------------------------------------------------------------------------
+| end of epoch 59 | time 813.08s | kl_weight 1.00 | vae_lr 0.00 | loss 8.13
+| recon 5.49 | kl 2.63 | mi 2.01
+---------------------------------------------------------------------------
+| epoch 60 |  5000/35093 batches | 22.65 ms/batch | loss 7.91 | recon 5.74 | kl 2.17 |
+| epoch 60 | 10000/35093 batches | 22.48 ms/batch | loss 7.88 | recon 5.71 | kl 2.17 |
+| epoch 60 | 15000/35093 batches | 23.06 ms/batch | loss 8.01 | recon 5.81 | kl 2.19 |
+| epoch 60 | 20000/35093 batches | 22.50 ms/batch | loss 7.88 | recon 5.72 | kl 2.17 |
+| epoch 60 | 25000/35093 batches | 22.62 ms/batch | loss 7.96 | recon 5.77 | kl 2.19 |
+| epoch 60 | 30000/35093 batches | 22.54 ms/batch | loss 7.92 | recon 5.75 | kl 2.18 |
+| epoch 60 | 35000/35093 batches | 22.87 ms/batch | loss 7.97 | recon 5.79 | kl 2.18 |
+---------------------------------------------------------------------------
+| end of epoch 60 | time 810.16s | kl_weight 1.00 | vae_lr 0.00 | loss 8.13
+| recon 5.56 | kl 2.57 | mi 1.99
+---------------------------------------------------------------------------
+| epoch 61 |  5000/35093 batches | 22.56 ms/batch | loss 7.90 | recon 5.72 | kl 2.19 |
+| epoch 61 | 10000/35093 batches | 22.74 ms/batch | loss 7.92 | recon 5.75 | kl 2.17 |
+| epoch 61 | 15000/35093 batches | 23.17 ms/batch | loss 8.00 | recon 5.82 | kl 2.18 |
+| epoch 61 | 20000/35093 batches | 22.54 ms/batch | loss 7.93 | recon 5.75 | kl 2.18 |
+| epoch 61 | 25000/35093 batches | 22.59 ms/batch | loss 7.99 | recon 5.81 | kl 2.18 |
+| epoch 61 | 30000/35093 batches | 23.19 ms/batch | loss 7.97 | recon 5.78 | kl 2.19 |
+| epoch 61 | 35000/35093 batches | 22.54 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+---------------------------------------------------------------------------
+| end of epoch 61 | time 812.74s | kl_weight 1.00 | vae_lr 0.00 | loss 8.06
+| recon 5.49 | kl 2.57 | mi 2.08
+---------------------------------------------------------------------------
+| epoch 62 |  5000/35093 batches | 23.01 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+| epoch 62 | 10000/35093 batches | 23.03 ms/batch | loss 7.88 | recon 5.70 | kl 2.18 |
+| epoch 62 | 15000/35093 batches | 22.68 ms/batch | loss 7.93 | recon 5.75 | kl 2.18 |
+| epoch 62 | 20000/35093 batches | 22.73 ms/batch | loss 7.91 | recon 5.74 | kl 2.17 |
+| epoch 62 | 25000/35093 batches | 23.11 ms/batch | loss 7.93 | recon 5.75 | kl 2.18 |
+| epoch 62 | 30000/35093 batches | 23.02 ms/batch | loss 8.01 | recon 5.83 | kl 2.18 |
+| epoch 62 | 35000/35093 batches | 22.21 ms/batch | loss 7.96 | recon 5.79 | kl 2.17 |
+---------------------------------------------------------------------------
+| end of epoch 62 | time 815.66s | kl_weight 1.00 | vae_lr 0.00 | loss 8.22
+| recon 5.55 | kl 2.66 | mi 2.04
+---------------------------------------------------------------------------
+| epoch 63 |  5000/35093 batches | 23.10 ms/batch | loss 7.86 | recon 5.69 | kl 2.18 |
+| epoch 63 | 10000/35093 batches | 22.65 ms/batch | loss 7.90 | recon 5.73 | kl 2.17 |
+| epoch 63 | 15000/35093 batches | 22.50 ms/batch | loss 7.96 | recon 5.77 | kl 2.18 |
+| epoch 63 | 20000/35093 batches | 22.77 ms/batch | loss 7.91 | recon 5.73 | kl 2.18 |
+| epoch 63 | 25000/35093 batches | 23.06 ms/batch | loss 7.97 | recon 5.78 | kl 2.19 |
+| epoch 63 | 30000/35093 batches | 22.54 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+| epoch 63 | 35000/35093 batches | 23.05 ms/batch | loss 7.94 | recon 5.77 | kl 2.17 |
+saving to checkpoint/ours-jsw-attn+pe/20231109-175356
+---------------------------------------------------------------------------
+| end of epoch 63 | time 815.82s | kl_weight 1.00 | vae_lr 0.00 | loss 8.04
+| recon 5.41 | kl 2.63 | mi 2.05
+---------------------------------------------------------------------------
+| epoch 64 |  5000/35093 batches | 22.79 ms/batch | loss 7.93 | recon 5.76 | kl 2.17 |
+| epoch 64 | 10000/35093 batches | 22.44 ms/batch | loss 7.90 | recon 5.73 | kl 2.17 |
+| epoch 64 | 15000/35093 batches | 22.63 ms/batch | loss 7.92 | recon 5.74 | kl 2.18 |
+| epoch 64 | 20000/35093 batches | 22.98 ms/batch | loss 7.98 | recon 5.81 | kl 2.17 |
+| epoch 64 | 25000/35093 batches | 22.39 ms/batch | loss 7.99 | recon 5.80 | kl 2.18 |
+| epoch 64 | 30000/35093 batches | 22.34 ms/batch | loss 7.95 | recon 5.76 | kl 2.19 |
+| epoch 64 | 35000/35093 batches | 23.18 ms/batch | loss 7.96 | recon 5.78 | kl 2.19 |
+---------------------------------------------------------------------------
+| end of epoch 64 | time 810.68s | kl_weight 1.00 | vae_lr 0.00 | loss 7.92
+| recon 5.49 | kl 2.43 | mi 1.96
+---------------------------------------------------------------------------
+| epoch 65 |  5000/35093 batches | 22.35 ms/batch | loss 7.91 | recon 5.73 | kl 2.18 |
+| epoch 65 | 10000/35093 batches | 22.72 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+| epoch 65 | 15000/35093 batches | 22.87 ms/batch | loss 7.94 | recon 5.76 | kl 2.18 |
+| epoch 65 | 20000/35093 batches | 22.29 ms/batch | loss 7.92 | recon 5.75 | kl 2.17 |
+| epoch 65 | 25000/35093 batches | 22.75 ms/batch | loss 8.01 | recon 5.83 | kl 2.18 |
+| epoch 65 | 30000/35093 batches | 22.73 ms/batch | loss 8.04 | recon 5.86 | kl 2.18 |
+| epoch 65 | 35000/35093 batches | 22.86 ms/batch | loss 7.99 | recon 5.82 | kl 2.18 |
+val loss : 5.407387100631842
+test loss: 11.293206032672579
+test recon: 8.661498810946728
+test kl: 2.63170722172585
+Vocabulary size: 43405
+/nas02/homes/yoshioka20-1000032/mr3venv/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  ../aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+50 3200
+100 6368
+150 9568
+Vocabulary size: 43405
+/nas02/homes/yoshioka20-1000032/mr3venv/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  ../aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+50 3200
+100 6368
+150 9568
+Vocabulary size: 43405
+/nas02/homes/yoshioka20-1000032/mr3venv/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  ../aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+Vocabulary size: 43405
+/nas02/homes/yoshioka20-1000032/mr3venv/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  ../aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+bow_process finished
+Acc: 98.39
+2556 / 12607
+Bleu: 54.91
+geo_mean: 64.21
+bow_process finished
+Acc: 47.65
+1058 / 12607
+Bleu: 46.88
+geo_mean: 54.54
+bow_process finished
+Acc: 68.35
+2 / 3744
+Bleu: 28.69
+geo_mean: 40.36
+bow_process finished
+Acc: 38.90
+1056 / 8863
+Bleu: 53.05
+geo_mean: 58.29

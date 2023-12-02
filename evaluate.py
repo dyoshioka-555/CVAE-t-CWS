@@ -13,11 +13,30 @@ from utils.text_utils import MonoTextData
 import torch
 from classifier import CNNClassifier, evaluate
 import os
-from rouge import Rouge
+# from rouge import Rouge
 
 
 def main(args):
     data_pth = "data/%s" % args.data_name
+    if args.vocab:
+        if os.path.isfile(os.path.join(data_pth, "vocab.pkl")):
+            vocab = pd.read_pickle(os.path.join(data_pth, "vocab.pkl"))
+        else:
+            if args.file is not None:
+                train_pth = args.load_path + args.file
+            else:
+                train_pth = os.path.join(data_pth, "train_data.txt")
+            train_data = MonoTextData(train_pth, True, vocab=100000)
+            vocab = train_data.vocab
+
+        vocab_dict = vocab.items()
+        # print(vocab_dict)
+
+        with open(data_pth + f"/vocab_{args.data_name}.txt", "w") as f:
+            for k in vocab_dict:
+                f.write(k + "\n")
+        exit()
+
     if args.file is not None:
         target_pth = args.load_path + args.file
     elif args.ac_wo and args.trans:
@@ -51,24 +70,7 @@ def main(args):
         print(f"len\tmean:{np.mean(lens):.2f}, max:{np.max(lens)}, min:{np.min(lens)}")
         exit()
 
-    if args.vocab:
-        # if os.path.isfile(os.path.join(args.load_path, "vocab.pkl")):
-        #    vocab = pd.read_pickle(os.path.join(args.load_path, "vocab.pkl"))
-        # else:
-        if args.file is not None:
-            train_pth = args.load_path + args.file
-        else:
-            train_pth = os.path.join(data_pth, "train_data.txt")
-        train_data = MonoTextData(train_pth, True, vocab=100000)
-        vocab = train_data.vocab
-
-        vocab_dict = vocab.items()
-        # print(vocab_dict)
-
-        with open(data_pth + f"/vocab_{args.data_name}.txt", "w") as f:
-            for k in vocab_dict:
-                f.write(k + "\n")
-        exit()
+    
 
     if args.b_vocab:
         # if os.path.isfile(os.path.join(args.load_path, "vocab.pkl")):

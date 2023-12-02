@@ -256,7 +256,6 @@ class TransformerDecoder(nn.Module):
         model_init,
         emb_init,
         device,
-        bow_size,
         num_layers=1,
     ):
         super(TransformerDecoder, self).__init__()
@@ -376,7 +375,7 @@ class TransformerDecoder(nn.Module):
 
             for i in range(batch_size):
                 if mask[i].item():
-                    decoded_batch[i].append(self.vocab.id2word(next_word[i].item()))
+                    decoded_batch[i].append(self.vocab.DecodeIds(next_word[i].item()))
 
             mask = torch.mul((next_word.squeeze(0) != end_symbol), mask)
 
@@ -591,7 +590,7 @@ class LSTMDecoder(nn.Module):
 
             for i in range(batch_size):
                 if mask[i].item():
-                    decoded_batch[i].append(self.vocab.id2word(select_index[i].item()))
+                    decoded_batch[i].append(self.vocab.DecodeIds(select_index[i].item()))
 
             mask = torch.mul((select_index != end_symbol), mask)
 
@@ -756,11 +755,11 @@ class LSTMDecoder(nn.Module):
             ):
                 utterance = []
                 attn_weight = []
-                utterance.append(self.vocab.id2word(n.wordid.item()))
+                utterance.append(self.vocab.DecodeIds(n.wordid.item()))
                 attn_weight.append(n.attn_w)
                 while n.prevNode is not None:
                     n = n.prevNode
-                    utterance.append(self.vocab.id2word(n.wordid.item()))
+                    utterance.append(self.vocab.DecodeIds(n.wordid.item()))
                     attn_weight.append(n.attn_w)
 
                 utterance = utterance[::-1]

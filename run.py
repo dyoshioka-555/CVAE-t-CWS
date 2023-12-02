@@ -115,6 +115,10 @@ def main(args):
         train = train_data.create_data_batch_labels(args.bsz, device)
         dev = dev_data.create_data_batch_labels(args.bsz, device)
         test = test_data.create_data_batch_labels(args.bsz, device)
+    
+    for label, text, cw in train:
+        print(label, text, cw)
+        exit()
 
     kwargs = {
         "train": train,

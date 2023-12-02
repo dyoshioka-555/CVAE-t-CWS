@@ -1,0 +1,92 @@
+Vocabulary size: 43405
+Experiment dir: checkpoint/ours-jsw-attn+pe/20231026-144706
+Vocabulary size: 43405
+Maximum length: 15
+Maximum length: 15
+Maximum length: 15
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/run.py", line 226, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/run.py", line 147, in main
+    valid_loss = model.fit()
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/models_tf/decomposed_vae.py", line 285, in fit
+    self.train(epoch)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/models_tf/decomposed_vae.py", line 141, in train
+    vae_logits, vae_kl1_loss, reg_ic = self.vae.loss(
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/models_tf/vae.py", line 77, in loss
+    outputs = self.decode(x[:-1], z1, label, hs) #.view(-1, batch_size, len(self.vocab))
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/models_tf/vae.py", line 71, in decode
+    return self.decoder(x, z, label, bow)
+  File "/nas02/homes/yoshioka20-1000032/mr3venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/models_tf/base_network.py", line 475, in forward
+    z_ = z.expand(seq_len, batch_size, self.nz)
+RuntimeError: The expanded size of the tensor (136) must match the existing size (144) at non-singleton dimension 2.  Target sizes: [11, 32, 136].  Tensor sizes: [1, 32, 144]
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/reconstract.py", line 8, in <module>
+    import config_attn as config
+ModuleNotFoundError: No module named 'config_attn'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/reconstract.py", line 8, in <module>
+    import config_attn as config
+ModuleNotFoundError: No module named 'config_attn'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 354, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 117, in main
+    eval_data = MonoTextData(target_pth, True, vocab=vocab, b_vocab=b_vocab)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 143, in __init__
+    ) = self._read_corpus(fname, label, max_length, vocab, b_vocab, ft)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 156, in _read_corpus
+    with open(fname) as fin:
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/reconstracted_results.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 354, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 117, in main
+    eval_data = MonoTextData(target_pth, True, vocab=vocab, b_vocab=b_vocab)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 143, in __init__
+    ) = self._read_corpus(fname, label, max_length, vocab, b_vocab, ft)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 156, in _read_corpus
+    with open(fname) as fin:
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/transfer_results.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/recon_to_pos.py", line 222, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/recon_to_pos.py", line 92, in main
+    with open(path, "r") as fin, open(
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/transfer_results.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/recon_to_pos.py", line 222, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/recon_to_pos.py", line 92, in main
+    with open(path, "r") as fin, open(
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/transfer_results.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 354, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 126, in main
+    eval_data = MonoTextData(
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 143, in __init__
+    ) = self._read_corpus(fname, label, max_length, vocab, b_vocab, ft)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 156, in _read_corpus
+    with open(fname) as fin:
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/transfer_results0_1.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 354, in <module>
+    main(args)
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/evaluate.py", line 119, in main
+    eval_data = MonoTextData(
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 143, in __init__
+    ) = self._read_corpus(fname, label, max_length, vocab, b_vocab, ft)
+  File "/nas02/homes/yoshioka20-1000032/TG/CVAE-t-CWS/utils/text_utils.py", line 156, in _read_corpus
+    with open(fname) as fin:
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ours-jsw-attn+pe/20231026-144706/transfer_results1_0.txt'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/reconstract.py", line 8, in <module>
+    import config_attn as config
+ModuleNotFoundError: No module named 'config_attn'
+Traceback (most recent call last):
+  File "/home/yoshioka20/nas02home/TG/CVAE-t-CWS/reconstract.py", line 8, in <module>
+    import config_attn as config
+ModuleNotFoundError: No module named 'config_attn'

@@ -5,7 +5,7 @@
 # LICENSE file in the root directory of this source tree.
 #
 
-import config_attn as config
+import config_tf as config
 import torch
 from utils.text_utils import MonoTextData
 from models_tf.decomposed_vae import attnVAE
@@ -91,6 +91,7 @@ def main(args):
                 "logging": None,
                 "use_bow": args.bow,
                 "debug_nan": False,
+                "debug": False,
                 # "fine_tuning": args.ft,
             }
         else:
@@ -103,6 +104,7 @@ def main(args):
                 "logging": None,
                 "use_bow": args.bow,
                 "debug_nan": False,
+                "debug": False,
                 # "fine_tuning": False,
             }
     else:
@@ -115,6 +117,7 @@ def main(args):
             "logging": None,
             "use_bow": args.bow,
             "debug_nan": False,
+            "debug": False,
         }
     params = conf["params"]
     params["vae_params"]["vocab"] = vocab
@@ -126,7 +129,7 @@ def main(args):
         len_bow = len(b_vocab)
     params["vae_params"]["bow_size"] = len_bow
     kwargs = dict(kwargs, **params)
-    
+
     model = attnVAE(**kwargs)
     model.load(args.load_path)
     model.vae.eval()
@@ -183,7 +186,7 @@ def main(args):
                 test_data.bow[idx:_idx],
                 0,
             )
-            texts, attn_w = model.vae.decoder.decode(z1, feat, hs)
+            texts, attn_w = model.vae.decoder.beam_search_decode(z1, feat, hs)
             if args.vtrain:
                 dir_name = "attn_visuals_train"
             elif args.dev:
@@ -256,7 +259,7 @@ def main(args):
                 0,
             )
 
-            texts, attn_w = model.vae.decoder.decode(z1, feat, hs)
+            texts, attn_w = model.vae.decoder.beam_search_decode(z1, feat, hs)
             os.makedirs(args.load_path + f"attn_visuals_train", exist_ok=True)
             # print(input_text)
             # print(input_text.size())
@@ -343,7 +346,7 @@ def main(args):
                 # tra_z2 = model.vae.mlp_encoder.var_embedding[var_id:var_id + 1, :].expand(
                 #    _idx - idx, -1)
 
-                texts, attn_w = model.vae.decoder.decode(z1, feat, hs)
+                texts, attn_w = model.vae.decoder.beam_search_decode(z1, feat, hs)
 
                 for text in texts:
                     if args.trans:
