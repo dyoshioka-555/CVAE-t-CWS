@@ -95,14 +95,14 @@ class attnVAE:
 
         batch_sampler = create_batch_sampler(self.train_data.data, self.bsz)
         random.shuffle(batch_sampler)
-        print("Batch_sampler Done")
+        # print("Batch_sampler Done")
 
         train = DataLoader(self.train_data, batch_sampler=batch_sampler, collate_fn=collate_fn, num_workers=2, pin_memory=True)
-        print("DataLoader Done")
+        # print("DataLoader Done")
 
         for text, label, cw in train:
             batch_data = text.to(self.device, non_blocking=True)
-            print(batch_data)
+            # print(batch_data)
 
             batch_label = label.to(self.device, non_blocking=True)
 
@@ -110,7 +110,7 @@ class attnVAE:
 
             _sent_len, batch_size = batch_data.size()
             # print(batch_data)
-            print(f"sent_len:{_sent_len}, batch_size:{batch_size}")
+            # print(f"sent_len:{_sent_len}, batch_size:{batch_size}")
 
             shift = np.random.randint(max(1, _sent_len - 10))
             batch_data = batch_data[shift:_sent_len, :]
@@ -158,7 +158,6 @@ class attnVAE:
                 shift,
                 no_ic=self.ic_weight == 0,
             )
-            print("test")
 
             vae_logits = vae_logits.view(-1, vae_logits.size(2))
             """
@@ -172,7 +171,7 @@ class attnVAE:
 
             vae_rec_loss = vae_rec_loss.view(-1, batch_size).sum(0)
             vae_loss = vae_rec_loss + beta1 * vae_kl1_loss
-            print(vae_loss)
+            # print(vae_loss)
 
             if 0:
                 if shift > 0:
