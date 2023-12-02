@@ -21,7 +21,7 @@ def main(args):
     conf = config.CONFIG[args.data_name]
     data_pth = "data/%s" % args.data_name
     train_data_pth = os.path.join(data_pth, "train_data.txt")
-    train_data = pd.read_csv(train_data_pth, names=['label', 'text', 'cw'], sep='\t')
+    train_data = pd.read_csv(train_data_pth, names=["label", "text", "cw"], sep="\t")
     train = CustomDataset(train_data, args.data_name)
 
     if args.debug:
@@ -29,11 +29,11 @@ def main(args):
         test = None
     else:
         dev_data_pth = os.path.join(data_pth, "dev_data.txt")
-        dev_data = pd.read_csv(dev_data_pth, names=['label', 'text', 'cw'], sep='\t')
+        dev_data = pd.read_csv(dev_data_pth, names=["label", "text", "cw"], sep="\t")
         dev = CustomDataset(dev_data, args.data_name)
-        
+
         test_data_pth = os.path.join(data_pth, "test_data.txt")
-        test_data = pd.read_csv(test_data_pth, names=['label', 'text', 'cw'], sep='\t')
+        test_data = pd.read_csv(test_data_pth, names=["label", "text", "cw"], sep="\t")
         test = CustomDataset(test_data, args.data_name)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -96,9 +96,9 @@ def main(args):
                 model.test_target,
             )
         else:
-            test_loss = model.evaluate(model.test)
+            test_loss = model.evaluate(model.test_data)
     else:
-        test_loss = model.evaluate(model.test)
+        test_loss = model.evaluate(model.test_data)
 
     logging("test loss: {}".format(test_loss[0]))
     logging("test recon: {}".format(test_loss[1]))

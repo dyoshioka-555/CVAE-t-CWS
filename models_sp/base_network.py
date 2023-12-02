@@ -136,7 +136,7 @@ class GaussianEncoderBase(nn.Module):
         var = logvar.exp()
         dev = z - mu
 
-        log_density = -0.5 * ((dev ** 2) / var).sum(dim=-1) - 0.5 * (
+        log_density = -0.5 * ((dev**2) / var).sum(dim=-1) - 0.5 * (
             nz * math.log(2 * math.pi) + logvar.sum(-1)
         )
 
@@ -158,7 +158,7 @@ class GaussianEncoderBase(nn.Module):
 
         dev = z_samples - mu
 
-        log_density = -0.5 * ((dev ** 2) / var).sum(dim=-1) - 0.5 * (
+        log_density = -0.5 * ((dev**2) / var).sum(dim=-1) - 0.5 * (
             nz * math.log(2 * math.pi) + logvar.sum(-1)
         )
 
@@ -184,7 +184,7 @@ class TransformerEncoder(GaussianEncoderBase):
     ):
         super(TransformerEncoder, self).__init__()
         self.embed = nn.Embedding(vocab_size, ni)
-        self.pos_embed = AddPositionalEncoding(ni, 32, device)
+        self.pos_embed = AddPositionalEncoding(ni, 64, device)
 
         self.encoder_layer = nn.TransformerEncoderLayer(d_model=ni, nhead=nhead)
         self.transformer_encoder = nn.TransformerEncoder(
@@ -227,7 +227,7 @@ class TransformerEncoder(GaussianEncoderBase):
             zero = torch.zeros_like(hs[0][0])
 
             bow = [[i - shift for i in b if i - shift >= 0] for b in bow]
-            for (p, j) in zip(bow, range(batch_size)):
+            for p, j in zip(bow, range(batch_size)):
                 for k in range(seq_len):
                     if k not in p:
                         hs[k][j] = zero
@@ -266,7 +266,7 @@ class TransformerDecoder(nn.Module):
         self.device = device
 
         self.embed = nn.Embedding(len(vocab), ni, padding_idx=-1)
-        self.pos_embed = AddPositionalEncoding(ni, 32, device)
+        self.pos_embed = AddPositionalEncoding(ni, 64, device)
 
         self.dropout_in = nn.Dropout(dropout_in)
         self.dropout_out = nn.Dropout(dropout_out)
@@ -322,7 +322,6 @@ class TransformerDecoder(nn.Module):
         c = torch.zeros(batch_size, 1, self.nh, device=self.device)
 
         for i in range(attention_weight.size()[2]):  # 10回ループ
-
             # attention_weight[:,:,i].size() = ([100, 29])
             # i番目のGRU層に対するattention weightを取り出すが、テンソルのサイズをhsと揃えるためにunsqueezeする
             unsq_weight = attention_weight[:, :, i].unsqueeze(
@@ -388,7 +387,7 @@ class LSTMEncoder(GaussianEncoderBase):
     ):
         super(LSTMEncoder, self).__init__()
         self.embed = nn.Embedding(vocab_size, ni)
-        self.pos_embed = AddPositionalEncoding(ni, 32, device)
+        self.pos_embed = AddPositionalEncoding(ni, 64, device)
         self.nh = nh
         self.label_ni = label_ni
 
@@ -431,7 +430,7 @@ class LSTMEncoder(GaussianEncoderBase):
             zero = torch.zeros_like(hs[0][0])
 
             bow = [[i - shift for i in b if i - shift >= 0] for b in bow]
-            for (p, j) in zip(bow, range(bsz)):
+            for p, j in zip(bow, range(bsz)):
                 for k in range(seq_len):
                     if k not in p:
                         hs[k][j] = zero
@@ -525,7 +524,6 @@ class LSTMDecoder(nn.Module):
         c = torch.zeros(batch_size, 1, self.nh, device=self.device)
 
         for i in range(attention_weight.size()[2]):  # 10回ループ
-
             # attention_weight[:,:,i].size() = ([100, 29])
             # i番目のGRU層に対するattention weightを取り出すが、テンソルのサイズをhsと揃えるためにunsqueezeする
             unsq_weight = attention_weight[:, :, i].unsqueeze(
@@ -590,7 +588,9 @@ class LSTMDecoder(nn.Module):
 
             for i in range(batch_size):
                 if mask[i].item():
-                    decoded_batch[i].append(self.vocab.DecodeIds(select_index[i].item()))
+                    decoded_batch[i].append(
+                        self.vocab.DecodeIds(select_index[i].item())
+                    )
 
             mask = torch.mul((select_index != end_symbol), mask)
 
@@ -623,7 +623,6 @@ class LSTMDecoder(nn.Module):
             t = 0
             flag = 1
             while len(completed_hypotheses) < K and t < max_t:
-
                 t += 1
 
                 # print(t)
@@ -668,7 +667,6 @@ class LSTMDecoder(nn.Module):
                 c = torch.zeros(len(live_hypotheses), 1, self.nh, device=self.device)
 
                 for i in range(attention_weight.size()[2]):
-
                     # attention_weight[:,:,i].size() = ([100, 29])
                     # i番目のGRU層に対するattention weightを取り出すが、テンソルのサイズをhsと揃えるためにunsqueezeする
                     unsq_weight = attention_weight[:, :, i].unsqueeze(

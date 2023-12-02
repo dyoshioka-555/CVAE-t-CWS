@@ -14,7 +14,12 @@ import torch
 import torch.nn as nn
 
 from .utils import uniform_initializer, value_initializer, gumbel_softmax
-from .base_network import LSTMEncoder, LSTMDecoder, TransformerEncoder, TransformerDecoder
+from .base_network import (
+    LSTMEncoder,
+    LSTMDecoder,
+    TransformerEncoder,
+    TransformerDecoder,
+)
 
 
 class DecomposedVAE(nn.Module):
@@ -39,7 +44,7 @@ class DecomposedVAE(nn.Module):
         dec_embed_init = uniform_initializer(0.1)
         self.device = device
         self.vocab = vocab
-        self.lstm_encoder = TransformerEncoder(
+        self.lstm_encoder = LSTMEncoder(
             lstm_ni,
             lstm_nh,
             lstm_nz,
@@ -70,10 +75,11 @@ class DecomposedVAE(nn.Module):
         return self.decoder(x, z, label, bow)
 
     def loss(self, x, label, bow=None, shift=None, tau=1.0, nsamples=1, no_ic=True):
-
         z1, KL1, hs = self.encode_syntax(x, label, bow, shift, nsamples)
         # _, batch_size, _ = z1.size()
-        outputs = self.decode(x[:-1], z1, label, hs) #.view(-1, batch_size, len(self.vocab))
+        outputs = self.decode(
+            x[:-1], z1, label, hs
+        )  # .view(-1, batch_size, len(self.vocab))
 
         if no_ic:
             reg_ic = torch.zeros(10)

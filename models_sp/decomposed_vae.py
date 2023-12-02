@@ -69,8 +69,20 @@ class attnVAE:
 
         self.train_data = train
         if not debug:
-            self.valid_data = DataLoader(valid, batch_sampler=create_batch_sampler(valid.data, self.bsz), collate_fn=collate_fn, num_workers=2, pin_memory=True)
-            self.test_data = DataLoader(test, batch_sampler=create_batch_sampler(test.data, self.bsz), collate_fn=collate_fn, num_workers=2, pin_memory=True)
+            self.valid_data = DataLoader(
+                valid,
+                batch_sampler=create_batch_sampler(valid.data, self.bsz),
+                collate_fn=collate_fn,
+                num_workers=2,
+                pin_memory=True,
+            )
+            self.test_data = DataLoader(
+                test,
+                batch_sampler=create_batch_sampler(test.data, self.bsz),
+                collate_fn=collate_fn,
+                num_workers=2,
+                pin_memory=True,
+            )
 
         self.vae = VAE(**vae_params)
         if self.use_cuda:
@@ -97,7 +109,13 @@ class attnVAE:
         random.shuffle(batch_sampler)
         # print("Batch_sampler Done")
 
-        train = DataLoader(self.train_data, batch_sampler=batch_sampler, collate_fn=collate_fn, num_workers=2, pin_memory=True)
+        train = DataLoader(
+            self.train_data,
+            batch_sampler=batch_sampler,
+            collate_fn=collate_fn,
+            num_workers=2,
+            pin_memory=True,
+        )
         # print("DataLoader Done")
 
         for text, label, cw in train:
@@ -240,8 +258,9 @@ class attnVAE:
         num_words = 0
 
         with torch.no_grad():
-
             for batch_data, batch_label, batch_cw in eval_data:
+                batch_data = batch_data.to(self.device, non_blocking=True)
+                batch_label = batch_label.to(self.device, non_blocking=True)
                 _sent_len, batch_size = batch_data.size()
 
                 shift = np.random.randint(max(1, _sent_len - 10))

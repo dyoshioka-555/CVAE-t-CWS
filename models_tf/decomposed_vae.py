@@ -226,7 +226,6 @@ class attnVAE:
         num_words = 0
 
         with torch.no_grad():
-
             for batch_data, batch_label, batch_bow in zip(
                 eval_data, eval_label, eval_bow
             ):
